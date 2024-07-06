@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Damon" />
+    <meta name="description" content="" />
+    <!-- main style css -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/all.min.css" />
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/bootstrap.min.css" />
+    <link rel="stylesheet" href="../normlize/normlize.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../logo.jpg" type="img/x-icon" />
+    <title>Minimalist portfolio website</title>
+    <script
+      src="https://kit.fontawesome.com/533e5d4e51.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.onload = () => {
+        const viewBtns = document.querySelectorAll(".view-btn");
+        viewBtns.forEach((btn, index) => {
+          btn.addEventListener("click", function () {
+            localStorage.setItem("index", index);
+          });
+        });
+      };
+    </script>
+  </head>
+  <body class="bg-light">
+    <!-- Start Nav -->
+    <nav
+      class="container d-flex justify-content-between py-5 position-relative align-items-center"
+    >
+      <div class="logo">
+        <img
+          src="https://bengera.github.io/minimalist-portfolio/images/logo.svg"
+          alt=""
+        />
+      </div>
+      <i class="fa-solid fa-bars d-md-none fs-4 menu-toggler"></i>
+      <ul
+        class="links text-uppercase list-unstyled m-0 d-flex gap-4 flex-column flex-md-row text-center"
+      >
+        <li><a href="index.html">HOme </a></li>
+        <li class="active"><a href="portfolio.html">PORTFOLIO </a></li>
+        <li><a href="contact.html">CONTACT ME </a></li>
+      </ul>
+    </nav>
+    <!-- End Nav -->
+    <!-- Start Project -->
+    <section class="project">
+      <div class="container">
+        <div class="row justify-content-between gap-4">
+          <div class="img">
+            <img
+              src="https://bengera.github.io/minimalist-portfolio/images/portfolio/mobile/image-portfolio-manage@2x.jpg"
+              alt=""
+              class="w-100"
+            />
+          </div>
+          <div
+            class="content d-flex flex-column justify-content-center border-1"
+          >
+            <h1 class="fw-bold fs-1 my-4">Manage</h1>
+            <p>
+              This project required me to build a fully responsive landing page
+              to the designs provided. I used HTML5, along with CSS Grid and
+              JavaScript for the areas that required interactivity, such as the
+              testimonial slider.
+            </p>
+            <a
+              href="manage.html"
+              class="view-btn d-inline-block button text-uppercase mt-4 text-center mb-4"
+            >
+              VIEW PROJECT
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project my-4">
+      <div class="container">
+        <div
+          class="row justify-content-between flex-column-reverse gap-4 flex-md-row"
+        >
+          <div
+            class="content d-flex flex-column justify-content-center border-1"
+          >
+            <h1 class="fw-bold fs-1 my-4">Bookmark</h1>
+            <p>
+              This project required me to build a fully responsive landing page
+              to the designs provided. I used HTML5, along with CSS Grid and
+              JavaScript for the areas that required interactivity, such as the
+              features section.
+            </p>
+            <a
+              href="manage.html"
+              class="view-btn d-inline-block button text-uppercase mt-4 text-center mb-4"
+            >
+              VIEW PROJECT
+            </a>
+          </div>
+          <div class="img">
+            <img
+              src="https://bengera.github.io/minimalist-portfolio/images/portfolio/mobile/image-portfolio-bookmark@2x.jpg"
+              alt=""
+              class="w-100"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project my-4">
+      <div class="container">
+        <div class="row justify-content-between gap-4">
+          <div class="img">
+            <img
+              src="https://bengera.github.io/minimalist-portfolio/images/portfolio/mobile/image-portfolio-insure@2x.jpg"
+              alt=""
+              class="w-100"
+            />
+          </div>
+          <div
+            class="content d-flex flex-column justify-content-center border-1"
+          >
+            <h1 class="fw-bold fs-1 my-4">Insure</h1>
+            <p>
+              This was a small project which mostly consisted of HTML and CSS. I
+              built a fully-responsive landing page. The only JavaScript this
+              project required was to enable the toggling of the mobile
+              navigation.
+            </p>
+            <a
+              href="manage.html"
+              class="view-btn d-inline-block button text-uppercase mt-4 text-center mb-4"
+            >
+              VIEW PROJECT
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project my-4">
+      <div class="container">
+        <div
+          class="row justify-content-between flex-column-reverse gap-4 flex-md-row"
+        >
+          <div
+            class="content d-flex flex-column justify-content-center border-1"
+          >
+            <h1 class="fw-bold fs-1 my-4">Fylo</h1>
+            <p>
+              This project was built in pure HTML and CSS. I had mobile and
+              desktop designs to work to and built it so that it was
+              fully-responsive. I took a mobile-first approach and used modern
+              CSS like Flexbox and Grid for layout purposes.
+            </p>
+            <a
+              href="manage.html"
+              class="view-btn d-inline-block button text-uppercase mt-4 text-center mb-4"
+            >
+              VIEW PROJECT
+            </a>
+          </div>
+          <div class="img">
+            <img
+              src="https://bengera.github.io/minimalist-portfolio/images/portfolio/mobile/image-portfolio-fylo@2x.jpg"
+              alt=""
+              class="w-100"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Project -->
+    <!-- Start Contact -->
+    <section class="contact">
+      <div class="container">
+        <div
+          class="d-flex gap-3 align-items-center justify-content-between flex-column flex-md-row"
+        >
+          <h1 class="fs-1 fw-bold text-center text-md-start">
+            Interested in doing a project together?
+          </h1>
+          <span class="line w-100 d-none d-md-block"></span>
+          <a
+            href="contact.html"
+            class="d-inline-block button text-uppercase w-100 text-center"
+          >
+            COnTACT ME</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <footer class="py-5">
+      <div class="container">
+        <div
+          class="d-flex gap-4 align-items-center justify-content-between flex-column flex-md-row"
+        >
+          <ul
+            class="links text-uppercase list-unstyled m-0 d-flex gap-4 align-items-center flex-column flex-md-row"
+          >
+            <li>
+              <img
+                src="https://bengera.github.io/minimalist-portfolio/images/logo-white.svg"
+                alt=""
+              />
+            </li>
+            <li><a href="index.html" class="text-light">HOme </a></li>
+            <li><a href="portfolio.html" class="text-light">PORTFOLIO </a></li>
+            <li><a href="contact.html" class="text-light">CONTACT ME </a></li>
+          </ul>
+          <ul class="social text-uppercase list-unstyled m-0 d-flex gap-4">
+            <li>
+              <a href="#"
+                ><img
+                  src="https://bengera.github.io/minimalist-portfolio/images/icons/github.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://bengera.github.io/minimalist-portfolio/images/icons/twitter.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://bengera.github.io/minimalist-portfolio/images/icons/linkedin.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="../main.js"></script>
+    <script src="../bootstrap-5.3.2-dist/bootstrap.bundle.min.js"></script>
+    <!-- <script src="../fontawesome-free-6.5.1-web/all.min.js"></script> -->
+  </body>
+</html>
