@@ -86,6 +86,16 @@ nav li a:hover {
     bottom: 0;
   }
 }
+@media (max-width: 768px) {
+  .landing-page .img {
+        height: 40vh;
+  }
+  .landing-page .img img {
+    object-fit: cover;
+    height: 100%;
+    object-position: 60%;
+  }
+}
 .landing-page h1 {
   line-height: 3rem;
 }
